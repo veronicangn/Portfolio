@@ -1,8 +1,76 @@
 h1 {
     font-family: "Jost", sans-serif;
+    font-size: 80px;
+    padding-bottom: 200px;
 }
 
-.navbar {
-    background-color:#f0eee9;
-    font-family: "Jost" sans-serif;
+
+h2 {
+    padding-left: 0px;
+    font-family: "Jost", sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+p {
+    font-family: "Rubik", sans-serif;
+}
+
+nav {
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+nav li {
+    font-family: "Jost", sans-serif;
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #ADDAEA;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 20px;
+}
+
+
+#about {
+    background-color: aliceblue;
 }
