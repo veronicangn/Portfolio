@@ -1,8 +1,4 @@
-h1 {
-    font-family: "Jost", sans-serif;
-    font-size: 70px;
-    padding-bottom: 100px;
-}
+
 
 
 h2 {
@@ -68,13 +64,16 @@ nav a:hover::after {
     width: 100%;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
 section {
     padding: 50px;
+}
+
+#home {
+    padding-bottom: 200px;
 }
 
 #education {
@@ -88,6 +87,9 @@ section {
     padding-top: 50px;
 }
 
+#contact {
+    padding-bottom: 100px;
+}
 
 div.topcontainer {
     display: flex;
@@ -96,16 +98,43 @@ div.topcontainer {
 
 div.meimage {
     flex: 10;
-    padding-top: 50px;
-    padding-left: 100px;
+    padding-top: 200px;
+    padding-left: 250px;
+    padding-bottom: 100px;
+}
+
+.me {
+    border-radius: 50%;
 }
 
 div.metext {
-    padding-top: 50px;
     padding-left: 50px;
-    padding-right: 100px;
+    display: inline-block;
 }
 
+.anitext {
+    font-family: "Jost", sans-serif;
+    font-size: 70px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-top: 250px; 
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2.6s steps(40, end),
+        cursor .5s step-end infinite;
+}
+
+@keyframes cursor {
+    from, to {border-color: transparent}
+    50% {border-color: black}
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 70%}
+}
 
 .csulb {
     display: block;
