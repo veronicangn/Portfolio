@@ -5,9 +5,11 @@
         <link rel="stylesheet" href = "styles.css">
         <link rel="stylesheet" href = "https://fonts.googleapis.com/css?family=Jost">
         <link rel="stylesheet" href = "https://fonts.googleapis.com/css?family=Rubik">
+        <link rel="stylesheet" href = "https://fonts.googleapis.com/css?family=Playfair Display">
     </head>
 
     <body>
+        <!-- Navigation Bar -->
         <nav>
             <ul>
                 <li><a href="#home">VERONICA NGUYEN</a></li>
@@ -17,25 +19,23 @@
             </ul>
         </nav>
         
+        <!-- Home Page -->
         <section id="home">
-            <div class="topcontainer">
-                <div class="meimage">
-                    <img src="me.jpg" alt="me" class="me" style="width:200px; height: 210px">
-                </div>
-                <div class="metext">
-                    <p class="anitext">Hi...I'm Veronica!</p>
-                </div>
-            </div>
+            <p class="intro-text" style="position: absolute; left: 450px; top:30px; font-size: 30px; padding-top: 40px; font-family: Playfair Display; color:white">Hi, I'm...</p>
+            <p class="name-text" style="text-align: center; padding-top: 40px; font-size: 70px; font-family: Jost; color:white">VERONICA</p>
+            <img src="me.jpg" alt="me" class="meimage" style="width:200px; height: 210px">
+            <p style="font-size: 20px; font-family: Jost; padding-top: 60px;">Thanks for visiting!</p>
         </section>
 
-
+        <!-- Education Section -->
         <section id="education">
             <h2>Education</h2>
             <img src="csulb logo.png" alt="csulb logo" class="csulb" style="width:100px; height:100px">
             <p>California State University, Long Beach</p>
-            <p>Computer Science Major</p>
+            <p>Computer Science Major | GPA: 3.7</p>
             <p>Expected Graduation: Fall 2024</p>
             <p style="font-size:20px;">Relevant Coursework:</p>
+            <!-- Courses List -->
             <div class="coursescontainer">
                 <ul class="courses">
                     <li>Intro to Programming</li>
@@ -51,19 +51,22 @@
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
+            <div class="projects-container">
+                
+            </div>
         </section>
         
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me!</h2>
             <p><a href="mailto: veronicanguyen78@gmail.com"  style="font-size:15px;">veronicanguyen78@gmail.com</a></p>
-            
-
-            
+            <div class="logoscontainer">
+                <a href="https://www.instagram.com/veroonicanguyen/"><img src="insta logo.png" alt="insta logo" class="logo" style="width:50px; height:50px"></a>
+                <a href="https://www.linkedin.com/in/veronica-nguyen-a976811a8"><img src="linkedin logo.png" alt="linkedin logo" class ="logo" style="width:37px; height:37px"></a>
+            </div>
         </section>
-
-        <script src="script.js"></script>
     </body>
-
 </html>
