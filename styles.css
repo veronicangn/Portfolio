@@ -78,9 +78,8 @@ section {
 }
 
 #education {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-top:50px;
-
 }
 
 #projects {
@@ -93,25 +92,28 @@ section {
     background-color: lightgray;
 }
 
-div.topcontainer {
-    display: flex;
-    flex-wrap: wrap;
+.intro-container {
+    position: relative;
 }
 
-div.meimage {
-    flex: 10;
-    padding-top: 200px;
-    padding-left: 250px;
-    padding-bottom: 100px;
+.intro-text {
+    position: relative;
+    font-size: 30px;
+    padding-top: 40px;
+    font-family: Playfair Display;
+    color: white;
 }
 
 .name-text {
+    font-size: 70px;
+    font-family: Jost;
+    color: white;
     animation: fadeIn ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-/* Fadein animation */
+/* fade in animation */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -121,11 +123,35 @@ div.meimage {
     }
 }
 
+div.meimage {
+    flex: 10;
+    padding-top: 200px;
+    padding-left: 250px;
+    padding-bottom: 100px;
+}
+
 .meimage {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
+}
+
+button {
+    display: block;
+    margin: auto;
+}
+
+.button-container {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.about-me-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .csulb {
@@ -135,16 +161,39 @@ div.meimage {
     width: 50%
 }
 
-div.coursescontainer{
-    font-family: "Jost", sans-serif;
-    text-align: center;
-    
+/* Columns */
+* {
+    box-sizing: border-box;
 }
 
-ul.courses {
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+li {
+    font-family: Jost;
+}
+
+div.list-container {
+    text-align: center;
+    margin: auto;
+    border: solid 5px #A9CBD5;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+ul.list {
     display: inline-block;
     text-align: left;
-    margin-top:0;
 }
 
 .logoscontainer {

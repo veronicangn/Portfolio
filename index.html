@@ -13,18 +13,51 @@
         <nav>
             <ul>
                 <li><a href="#home">VERONICA NGUYEN</a></li>
+                <li><a href="#about-me">About Me</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         
-        <!-- Home Page -->
+        <!-- Home Page Section -->
         <section id="home">
-            <p class="intro-text" style="position: absolute; left: 450px; top:30px; font-size: 30px; padding-top: 40px; font-family: Playfair Display; color:white">Hi, I'm...</p>
-            <p class="name-text" style="text-align: center; padding-top: 40px; font-size: 70px; font-family: Jost; color:white">VERONICA</p>
+            <div class="intro-container">
+                <p class="intro-text">Hi, I'm...</p>
+                <p class="name-text">VERONICA</p>
+            </div>
             <img src="me.jpg" alt="me" class="meimage" style="width:200px; height: 210px">
-            <p style="font-size: 20px; font-family: Jost; padding-top: 60px;">Thanks for visiting!</p>
+            
+            <div class="button-container">
+                <button onclick="jumpToSection('about-me')">v</button>
+            </div>
+        </section>
+
+        
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <div class="about-me-container">
+                <p style="font-size: 18px; text-align: left;">Hello, nice to meet you!
+                    <br><br>
+                    I'm someone who is passionate about computer science and loves to learn about new things! I'm interested in becoming a software 
+                    developer and also have special interests in web development and artificial intelligence. I love that I can show my creative
+                    side through web development since I have always been interested in art.
+                    <br><br>
+                    In my free time, I like to spend time with my friends and family. I also like to draw and have taken several drawing and painting
+                    classes in the past.
+                    <br><br>
+                    I took my first computer science course in my junior year of high school, and I was instantly hooked. One of my favorite
+                    projects we did was a personal website using basic HTML and CSS.
+                    <br><br>
+                    Now, I'm currently a junior working towards my Bachelor's Degree in Computer Science at CSULB. I have gained a lot of knowledge
+                    in my courses and although I have much more to explore, I'm always eager to learn more! I hope I can utilize my skills and knowledge
+                    to make an impact in my society!
+                    <br><br>
+                    Thank you for visiting my website!
+
+                </p>
+            </div>
         </section>
 
         <!-- Education Section -->
@@ -33,21 +66,54 @@
             <img src="csulb logo.png" alt="csulb logo" class="csulb" style="width:100px; height:100px">
             <p>California State University, Long Beach</p>
             <p>Computer Science Major | GPA: 3.7</p>
-            <p>Expected Graduation: Fall 2024</p>
-            <p style="font-size:20px;">Relevant Coursework:</p>
-            <!-- Courses List -->
-            <div class="coursescontainer">
-                <ul class="courses">
-                    <li>Intro to Programming</li>
-                    <li>Data Structures</li>
-                    <li>Algorithms</li>
-                    <li>Digital Logic</li>
-                    <li>Discrete Structures</li>
-                    <li>OO Programming</li>
-                    <li>Databases</li>
-                    <li>System Programming</li>
-                    <li>Operating Systems</li>
-                </ul>
+            <p>Expected Graduation: December 2024</p>
+        
+            
+            <div class="row">
+                <!--First Column-->
+                <div class="column">
+                    <!-- Courses List -->
+                    <div class="list-container">
+                        <h2 style="font-size: 25px;">Relevant Coursework:</h2>
+                        <ul class="list">
+                            <li>Intro to Programming</li>
+                            <li>Data Structures</li>
+                            <li>Algorithms</li>
+                            <li>Databases</li>
+                            <li>Object Oriented Programming</li>
+                            <li>Discrete Mathematics</li>
+                            <li>System Programming</li>
+                            <li>Operating Systems</li>
+                            <li>Probability & Statistics</li>
+                            <li>Digital Logic</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--Second Column-->
+                <div class="column">
+                    <div class="list-container">
+                        <h2 style="font-size: 25px;">Skills & Technologies:</h2>
+                        <!--Languages List-->
+                        <p style="font-family: Jost; padding-bottom:5px;">Languages:</p>
+                        <ul class="list">
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>C</li>
+                            <li>HTML/CSS</li>
+                            <li>SQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    
+                        <!--Technologies List-->
+                        <p style="font-family: Jost">Technologies:</p>
+                            <ul class="list">
+                                <li>Linux</li>
+                                <li>Jupyter Notebook</li>
+                                <li>Matplotlib</li>
+                            </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -55,6 +121,7 @@
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects-container">
+
                 
             </div>
         </section>
@@ -62,11 +129,18 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me!</h2>
-            <p><a href="mailto: veronicanguyen78@gmail.com"  style="font-size:15px;">veronicanguyen78@gmail.com</a></p>
+            <p><a href="mailto: veronicanguyen78@gmail.com"  style="font-family: Jost; font-size:17px;">veronicanguyen78@gmail.com</a></p>
             <div class="logoscontainer">
                 <a href="https://www.instagram.com/veroonicanguyen/"><img src="insta logo.png" alt="insta logo" class="logo" style="width:50px; height:50px"></a>
-                <a href="https://www.linkedin.com/in/veronica-nguyen-a976811a8"><img src="linkedin logo.png" alt="linkedin logo" class ="logo" style="width:37px; height:37px"></a>
+                <a href="https://www.linkedin.com/in/veronica-nguyen1"><img src="linkedin logo.png" alt="linkedin logo" class ="logo" style="width:37px; height:37px"></a>
             </div>
         </section>
+
+        <script>
+            function jumpToSection(section) {
+                const element = document.getElementById(section);
+                element.scrollIntoView();
+            }
+        </script>
     </body>
 </html>
