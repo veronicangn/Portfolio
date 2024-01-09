@@ -1,3 +1,24 @@
+/* Sections */
+#home {
+    padding-bottom: 100px;
+    background-color:#A9CBD5;
+}
+
+#education {
+    padding-bottom: 50px;
+    padding-top:50px;
+}
+
+#projects {
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+#contact {
+    padding-bottom: 80px;
+    background-color: lightgray;
+}
+
 h2 {
     padding-left: 0px;
     font-family: "Jost", sans-serif;
@@ -10,9 +31,13 @@ body {
 }
 
 p {
-    font-family: "Rubik", sans-serif;
+    font-family: "Nunito", sans-serif;
     text-align: center;
     font-size: 20px;
+}
+
+li {
+    font-family: Jost;
 }
 
 /* Navigation Bar */
@@ -71,27 +96,6 @@ section {
     padding: 50px;
 }
 
-/* Sections */
-#home {
-    padding-bottom: 100px;
-    background-color:#A9CBD5;
-}
-
-#education {
-    padding-bottom: 50px;
-    padding-top:50px;
-}
-
-#projects {
-    padding-bottom: 100px;
-    padding-top: 50px;
-}
-
-#contact {
-    padding-bottom: 100px;
-    background-color: lightgray;
-}
-
 .intro-container {
     position: relative;
 }
@@ -123,6 +127,8 @@ section {
     }
 }
 
+/* Images */
+
 div.meimage {
     flex: 10;
     padding-top: 200px;
@@ -137,6 +143,44 @@ div.meimage {
     border-radius: 50%;
 }
 
+.csulb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.computer-image {
+    height: 170px;
+    width: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.histogram-image {
+    height: 200px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards-image {
+    height: 200px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoscontainer img {
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+/* Scroll Down Button */
 button {
     display: block;
     margin: auto;
@@ -154,56 +198,76 @@ button {
     box-sizing: border-box;
 }
 
-.csulb {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%
-}
-
 /* Columns */
 * {
     box-sizing: border-box;
 }
 
-.column {
+.education-column {
     float: left;
     width: 50%;
     padding: 10px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-li {
-    font-family: Jost;
 }
-
-div.list-container {
-    text-align: center;
-    margin: auto;
-    border: solid 5px #A9CBD5;
-    box-sizing: border-box;
+  
+.projects-column {
+    float: left;
+    width: 33.33%;
     padding: 10px;
 }
 
+.education-row:after, .projects-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.list-container {
+    text-align: center;
+    background-color: aliceblue;
+    margin: auto;
+    border: solid 3px #ADDAEA;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.second-column {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: top;
+}
 
 ul.list {
     display: inline-block;
     text-align: left;
+    padding: 0;
+}
+
+.projects-container {
+    text-align: center;
+    margin: auto;
+    border: solid 5px lavender;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.projects-container:hover {
+    background-color: #F0EDF2;
+}
+
+.projects-text {
+    max-width: 300px;
+    margin: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    font-family: Jost;
+    font-size:15px;
 }
 
 .logoscontainer {
     text-align: center;
-}
-
-.logoscontainer img {
-    display: inline-block;
-    margin: 5px;
-    vertical-align: middle;
 }
 
 
