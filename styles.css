@@ -1,6 +1,6 @@
 /* Sections */
 #home {
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     background-color:#A9CBD5;
 }
 
@@ -103,44 +103,54 @@ section {
 .intro-text {
     position: relative;
     font-size: 30px;
-    padding-top: 40px;
+    padding-top: 100px;
     font-family: Playfair Display;
     color: white;
+    text-align: left;
 }
 
-.name-text {
-    font-size: 70px;
+.fname-text {
+    font-size: 83px;
     font-family: Jost;
+    padding-left: 50px;
     color: white;
-    animation: fadeIn ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    text-align: left;
+    margin-top: -5px;
+    margin-bottom: -35px;
 }
 
-/* fade in animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.lname-text {
+    font-size: 83px;
+    font-family: Jost;
+    padding-left: 90px;
+    color: white;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.thanks-text {
+    text-align: left;
+    color: white;
+    font-family: Jost;
+    font-size: 22px;
+    padding-top: 2px;
+    padding-left: 150px;
 }
 
 /* Images */
-
-div.meimage {
+div.me-image {
     flex: 10;
-    padding-top: 200px;
     padding-left: 250px;
     padding-bottom: 100px;
 }
 
-.meimage {
+.me-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
+    box-shadow: -15px 15px #1a7fa1;
+    margin-top: 80px;
+    width:380px;
 }
 
 .csulb {
@@ -182,13 +192,24 @@ div.meimage {
 
 /* Scroll Down Button */
 button {
-    display: block;
-    margin: auto;
+    background-color: #A9CBD5;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    color: #1a7fa1;
 }
 
 .button-container {
-    margin-top: 80px;
-    text-align: center;
+    margin-top: 630px;
+    text-align: center; 
 }
 
 .about-me-container {
@@ -201,6 +222,12 @@ button {
 /* Columns */
 * {
     box-sizing: border-box;
+}
+
+.intro-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
 }
 
 .education-column {
@@ -223,7 +250,7 @@ button {
 
 .list-container {
     text-align: center;
-    background-color: aliceblue;
+    background-color: #f4f9fb;
     margin: auto;
     border: solid 3px #ADDAEA;
     border-radius: 15px;
@@ -269,5 +296,7 @@ ul.list {
 .logoscontainer {
     text-align: center;
 }
+
+
 
 
