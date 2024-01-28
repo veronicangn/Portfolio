@@ -15,8 +15,9 @@
 }
 
 #contact {
-    padding-bottom: 80px;
-    background-color: lightgray;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgb(234, 234, 234);
 }
 
 h2 {
@@ -296,10 +297,47 @@ ul.list {
     font-size:15px;
 }
 
-.logoscontainer {
-    text-align: center;
+/* Contact Me */
+
+.contact-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
 }
 
+.interpunct {
+    margin: 10px;
+}
+
+.socials-text {
+    font-family: Jost; 
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: color 0.2s ease;
+}
+
+.socials-text:hover {
+    color: #1a7fa1;
+
+}
+
+/* Repo Links Decoration */
+.repo-text{
+    text-decoration: none;
+    color: rgb(172, 98, 172);
+    transition: color 0.2s ease;
+}
+
+.repo-text:hover {
+    color: gray;
+}
+
+
+/* Mobile Responsiveness */
 @media (max-width: 767px) {
     section {
         padding: 20px;
