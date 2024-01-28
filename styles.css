@@ -149,17 +149,18 @@ div.me-image {
     margin-left: auto;
     margin-right: auto;
     height: 500px;
-    width: 400px;
+    width: 380px;
     box-shadow: -15px -15px #1a7fa1;
     margin-top: 70px;
-    width:380px;
 }
 
 .csulb {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%
+    width: 50%;
+    width: 100px;
+    height: 100px;
 }
 
 .computer-image {
@@ -299,6 +300,78 @@ ul.list {
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    section {
+        padding: 20px;
+    }
 
+    .me-image,
+    .csulb,
+    .computer-image,
+    .histogram-image,
+    .cards-image {
+        margin-top: 20px;
+    }
+
+    .me-image {
+        margin-top: 150px;
+        width: 300px;
+        height: 400px;
+    }
+   
+    .button-container {
+        margin-top: 20px; 
+    }
+
+    .intro-text {
+        position: relative;
+        font-size: 30px;
+        padding-top: 50px;
+        font-family: Playfair Display;
+        color: white;
+    }
+    
+    .fname-text {
+        text-align: center;
+        font-size: 50px;
+        font-family: Jost;
+        padding-left: 50px;
+        color: white;
+        margin-top: -5px;
+        margin-bottom: -20px;
+    }
+    
+    .lname-text {
+        text-align: center;
+        font-size: 50px;
+        font-family: Jost;
+        padding-left: 50px;
+        color: white;
+        margin-top: 0px;
+    }
+    
+    .thanks-text {
+        text-align: center;
+        color: white;
+        font-family: Jost;
+        font-size: 20px;
+        padding-top: 2px;
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .intro-column,
+    .education-column,
+    .projects-column,
+    .second-column {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .logoscontainer img {
+        margin: 5px;
+        vertical-align: middle;
+    }
+}
 
 
