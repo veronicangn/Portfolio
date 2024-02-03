@@ -28,7 +28,8 @@ h2 {
 }
 
 body {
-    margin: 0px;
+    margin: 0px; 
+    height: 100%;
 }
 
 p {
@@ -41,11 +42,29 @@ li {
     font-family: Jost;
 }
 
-/* Navigation Bar */
+main {
+    flex: 1 1 auto;
+    contain: content;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
 
+.layout {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  
+/* Navigation Bar */
 nav {
+    flex: none;
     overflow: hidden;
     background-color: aliceblue;
+    width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -56,18 +75,16 @@ nav ul {
     background-color: aliceblue;
     top: 0;
     width: 100%;
-    position: fixed;
 }
 
 nav li {
-    font-family: "Jost", sans-serif;
     float: left;
+    font-family: "Jost", sans-serif;
 }
 
 nav a {
     display: block;
     color: black;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     position: relative;
@@ -91,6 +108,7 @@ nav a:hover::after {
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 section {
@@ -262,6 +280,8 @@ ul.list {
     text-align: left;
     padding: 0;
 }
+
+
 
 .grid-container {
     display: grid;
