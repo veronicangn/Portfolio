@@ -1,5 +1,6 @@
 /* Sections */
 #home {
+    padding-top: 5px;
     padding-bottom: 70px;
     background-color:#A9CBD5;
 }
@@ -72,7 +73,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: aliceblue;
+    background-color: rgb(232, 244, 255);
     top: 0;
     width: 100%;
 }
@@ -123,7 +124,7 @@ section {
     position: relative;
     font-size: 30px;
     padding-top: 100px;
-    font-family: Playfair Display;
+    font-family: Jost;
     color: white;
     text-align: left;
 }
@@ -151,7 +152,7 @@ section {
     text-align: left;
     color: white;
     font-family: Jost;
-    font-size: 22px;
+    font-size: 28px;
     padding-top: 2px;
     padding-left: 150px;
 }
@@ -169,7 +170,7 @@ div.me-image {
     margin-right: auto;
     height: 500px;
     width: 380px;
-    box-shadow: -15px -15px #1a7fa1;
+    box-shadow: -15px -15px #5c92a4;
     margin-top: 70px;
 }
 
@@ -293,7 +294,7 @@ ul.list {
 
 .grid-item {
     background-color: white;
-    border: 5px solid lavender;
+    border: 5px solid #d2e6fd;
     border-radius: 15px;
     padding: 20px;
     font-size: 30px;
@@ -312,8 +313,8 @@ ul.list {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
-    background-color: lavender;
+    transition: .4s ease;
+    background-color: #d2e6fd;
 }
 
 .grid-item:hover .overlay{
@@ -334,7 +335,18 @@ ul.list {
     transform: translate(-50%, -50%);
 }
 
-/* Contact Me */
+/* Repo Links Decoration */
+.repo-text{
+    text-decoration: none;
+    color: gray;
+    transition: color 0.4s ease;
+}
+
+.repo-text:hover {
+    color: #5c92a4;
+}
+
+/* Contact Me Section*/
 
 .contact-section {
     display: flex;
@@ -354,37 +366,93 @@ ul.list {
     text-decoration: none;
     color: black;
     text-align: center;
-    transition: color 0.2s ease;
+    transition: color 0.4s ease;
 }
 
 .socials-text:hover {
-    color: #1a7fa1;
-
+    color: #5c92a4;
 }
 
-/* Repo Links Decoration */
-.repo-text{
-    text-decoration: none;
-    color: gray;
-    transition: color 0.2s ease;
-}
-
-.repo-text:hover {
-    color: rgb(172, 98, 172);
-}
-
-
-/* Mobile Responsiveness */
 @media (max-width: 767px) {
+
+    #home {
+        margin-top: -80px;
+    }
     section {
         padding: 20px;
     }
 
     .me-image,
     .csulb,
-    .computer-image,
-    .histogram-image,
-    .cards-image {
+    .computer-image {
+        margin-top: 20px;
+    }
+
+    .me-image {
+        margin-top: 50px;
+        width: 300px;
+        height: 400px;
+    }
+   
+    .button-container {
+        margin-top: 20px; 
+    }
+
+    .intro-text {
+        position: relative;
+        font-size: 30px;
+        padding-top: 30px;
+        color: white;
+    }
+    
+    .fname-text {
+        text-align: center;
+        font-size: 50px;
+        padding-right: 30px;
+        color: white;
+        margin-top: -5px;
+        margin-bottom: -20px;
+    }
+    
+    .lname-text {
+        text-align: center;
+        font-size: 50px;
+        padding-right: 30px;
+        color: white;
+        margin-top: 0px;
+    }
+    
+    .thanks-text {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding-top: 2px;
+        padding-left: 0px;
+        margin: auto;
+    }
+
+    .intro-column,
+    .education-column,
+    .second-column{
+        width: 100%;
+        padding: 8px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 989px) {
+    section {
+        padding: 20px;
+    }
+
+    .me-image,
+    .csulb,
+    .computer-image {
         margin-top: 20px;
     }
 
@@ -399,17 +467,16 @@ ul.list {
     }
 
     .intro-text {
-        position: relative;
+        text-align: center;
+        padding-right: 150px;
         font-size: 30px;
         padding-top: 50px;
-        font-family: Playfair Display;
         color: white;
     }
     
     .fname-text {
         text-align: center;
         font-size: 50px;
-        font-family: Jost;
         padding-left: 50px;
         color: white;
         margin-top: -5px;
@@ -419,7 +486,6 @@ ul.list {
     .lname-text {
         text-align: center;
         font-size: 50px;
-        font-family: Jost;
         padding-left: 50px;
         color: white;
         margin-top: 0px;
@@ -428,7 +494,6 @@ ul.list {
     .thanks-text {
         text-align: center;
         color: white;
-        font-family: Jost;
         font-size: 20px;
         padding-top: 2px;
         padding-left: 0px;
@@ -437,15 +502,15 @@ ul.list {
 
     .intro-column,
     .education-column,
-    .second-column {
+    .second-column{
         width: 100%;
         padding: 8px;
     }
-
-    .logoscontainer img {
-        margin: 5px;
-        vertical-align: middle;
+    
+    .grid-container {
+        grid-template-columns: 1fr;
     }
+
 }
 
 
