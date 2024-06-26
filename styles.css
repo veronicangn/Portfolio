@@ -361,7 +361,7 @@ ul.list {
 .repo-text{
     text-decoration: none;
     color: gray;
-    transition: color 0.4s ease;
+    transition: color 0.3s ease;
 }
 
 .repo-text:hover {
